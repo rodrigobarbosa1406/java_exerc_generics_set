@@ -3,12 +3,14 @@ package entities;
 public class Course {
 
 	private Integer codigo;
+	private String turma;
 	
 	public Course() {
 	}
 
-	public Course(Integer codigo) {
+	public Course(Integer codigo, String turma) {
 		this.codigo = codigo;
+		this.turma = turma;
 	}
 
 	public Integer getCodigo() {
@@ -17,6 +19,19 @@ public class Course {
 
 	public void setCodigo(Integer codigo) {
 		this.codigo = codigo;
+	}
+	
+	public String getTurma() {
+		return turma;
+	}
+
+	public void setTurma(String turma) {
+		this.turma = turma;
+	}
+
+	@Override
+	public String toString() {
+		return "Aluno " + codigo + ";";
 	}
 
 	@Override
